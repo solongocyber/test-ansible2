@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create key
+    ec2_key:
+      name: London-Bastion new
+      region: us-east-2
+      # state: absent
+      key_material: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBogGTGrL2Lp9vqhzGJYFGHQku9Kv55R5x5/aSGAD1mOg7U06mBciUCMte//sD2wKY/45nupaZhjj0QD1AnLMgKuWxbApYjI/3E5FTWkqDmPwirWNGWR3i6+HkT+mHWU0k7Ia/QtrLEFH+jrWcMRHj8yHMPB0U7bfLtaQLkGgEN6O9eHIwk4IVV0k6eQFxUuSYsj53eUFk4gQd53+I8tR4zr5AL23KC5DSe4H1mdITlvJmN+5zwaJKTklRYQHDrcO85bWQ3yh2+x1qKVNvd+02caGoJGB+uB29xlAJXgMw/4lj1FKQ3+WWQwyc/6UV4GPVrZumMiR2dJBZWFSPe3OX ec2-user@Bastion'
