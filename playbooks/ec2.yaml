@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  tasks: 
+  - ec2_instance:
+      key_name: London-Bastion new
+      state: absent
+      region: us-east-2
+      instance_type: t2.micro
+      security_group: default
+      network:
+        assign_public_ip: true
+      image_id: ami-0f7919c33c90f5b58
+      tags:
+        Environment: Created-by-ansible
